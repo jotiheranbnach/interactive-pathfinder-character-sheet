@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {IAttribute, IAttributes, ICharacterData} from "./ICharacterData.interface";
+import {IAttributes, ICharacterData} from "./ICharacterData.interface";
 import {Attribute, CharacterData} from "./CharacterData.class";
 
 @Injectable({
@@ -8,26 +8,7 @@ import {Attribute, CharacterData} from "./CharacterData.class";
 export class CharacterDataService {
     static readonly storageKey: string = 'characterData';
     static data: ICharacterData;
-
-//    static _data: ICharacterData;
-//    static get data(): ICharacterData {
-//        if (CharacterDataService._data) {
-//            return CharacterDataService._data;
-//        } else {
-//            const data = localStorage.getItem(CharacterDataService.storageKey);
-//            if (data) {
-//                CharacterDataService._data = JSON.parse(data);
-//            } else {
-//                CharacterDataService._data = new CharacterData();
-//            }
-//            return CharacterDataService._data
-//        }
-//    }
-//
-//    static set data(value: ICharacterData) {
-//        CharacterDataService._data = value;
-//    }
-
+    
     get attributes() {
         return CharacterDataService.data.attributes;
     }
