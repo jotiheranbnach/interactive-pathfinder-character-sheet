@@ -7,8 +7,6 @@ import {CharacterDataService} from "../services/character-data.service";
   styleUrls: ['./armor.component.scss']
 })
 export class ArmorComponent {
-    char = CharacterDataService.data;
-
-    constructor(private character: CharacterDataService) {
+    constructor(public char: CharacterDataService) {
     }
 }

@@ -15,27 +15,27 @@
         <tbody>
         <tr>
             <td><label>Reflex<div class="sub-label">(Geschicklichkeit)</div></label></td>
-            <td><input type="number"></td>
-            <td><input type="number"></td>
-            <td><input type="number" [value]="char.attributes.dexterity.modValue"></td>
+            <td><input type="number" disabled [value]="char.savingThrows.reflex.sum"></td>
+            <td><input type="number" [formControl]="fcReflexBaseBonus"></td>
+            <td><input type="number" disabled [value]="char.attributes.dexterity.mod"></td>
             <td><input type="number"></td>
             <td><input type="number"></td>
             <td><input type="number"></td>
         </tr>
         <tr>
             <td><label>Willen<div class="sub-label">(Weisheit)</div></label></td>
-            <td><input type="number"></td>
-            <td><input type="number"></td>
-            <td><input type="number" [value]="char.attributes.wisdom.modValue"></td>
+            <td><input type="number" disabled [value]="char.savingThrows.will.sum"></td>
+            <td><input type="number" [formControl]="fcWillBaseBonus"></td>
+            <td><input type="number" disabled [value]="char.attributes.wisdom.mod"></td>
             <td><input type="number"></td>
             <td><input type="number"></td>
             <td><input type="number"></td>
         </tr>
         <tr>
             <td><label>Zähigkeit<div class="sub-label">(Konstitution)</div></label></td>
-            <td><input type="number"></td>
-            <td><input type="number"></td>
-            <td><input type="number" [value]="char.attributes.constitution.modValue"></td>
+            <td><input type="number" disabled [value]="char.savingThrows.fortitude.sum"></td>
+            <td><input type="number" [formControl]="fcFortitudeBaseBonus"></td>
+            <td><input type="number" disabled [value]="char.attributes.constitution.mod"></td>
             <td><input type="number"></td>
             <td><input type="number"></td>
             <td><input type="number"></td>

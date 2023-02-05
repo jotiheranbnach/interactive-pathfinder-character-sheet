@@ -2,13 +2,13 @@ import {IAttribute, ICharacterData} from "./ICharacterData.interface";
 
 export class Attribute implements IAttribute {
     value: number;
-    modValue: number;
+    mod: number;
     modString: string;
 
     constructor(attributeValue: number) {
         this.value = attributeValue;
-        this.modValue = Attribute.getAttributeModifier(attributeValue);
-        this.modString = Attribute.getAttributeModifierString(this.modValue);
+        this.mod = Attribute.getAttributeModifier(attributeValue);
+        this.modString = Attribute.getAttributeModifierString(this.mod);
     }
 
     static getAttributeModifier(attributeValue: number = 10): number {
@@ -30,4 +30,27 @@ export class CharacterData implements ICharacterData {
         wisdom: new Attribute(10),
         charisma: new Attribute(10),
     };
+    savingThrows = {
+        reflex: {
+            sum: 0,
+            baseBonus: 0,
+            magicMod: 0,
+            miscMod: 0,
+            tempMod: 0,
+        },
+        will: {
+            sum: 0,
+            baseBonus: 0,
+            magicMod: 0,
+            miscMod: 0,
+            tempMod: 0,
+        },
+        fortitude: {
+            sum: 0,
+            baseBonus: 0,
+            magicMod: 0,
+            miscMod: 0,
+            tempMod: 0,
+        },
+    }
 }
