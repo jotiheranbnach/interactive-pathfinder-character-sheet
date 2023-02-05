@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {CharacterDataService} from "../services/character-data.service";
 
 @Component({
   selector: 'app-armor',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./armor.component.scss']
 })
 export class ArmorComponent {
+    char = CharacterDataService.data;
 
+    constructor(private character: CharacterDataService) {
+    }
 }

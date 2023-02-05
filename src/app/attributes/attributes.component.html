@@ -11,33 +11,33 @@
         <tbody>
         <tr>
             <td><label>ST<div class="sub-label">Stärke</div></label></td>
-            <td><input type="number" [formControl]=fcST></td>
-            <td><input type="text" disabled value="{{getAttributeMod(fcST)}}"></td>
+            <td><input type="number" [formControl]=fcStrength></td>
+            <td><input type="text" disabled value="{{char.attributes.strength.modString}}"></td>
         </tr>
         <tr>
             <td><label>GE<div class="sub-label">GEschicklichkeit</div></label></td>
-            <td><input type="number" [formControl]="fcGE"></td>
-            <td><input type="text" disabled value="{{getAttributeMod(fcGE)}}"></td>
+            <td><input type="number" [formControl]="fcDexterity"></td>
+            <td><input type="text" disabled value="{{char.attributes.dexterity.modString}}"></td>
         </tr>
         <tr>
             <td><label>KO<div class="sub-label">Konstitution</div></label></td>
-            <td><input type="number" [formControl]="fcKO"></td>
-            <td><input type="text" disabled value="{{getAttributeMod(fcKO)}}"></td>
+            <td><input type="number" [formControl]="fcConstitution"></td>
+            <td><input type="text" disabled value="{{char.attributes.constitution.modString}}"></td>
         </tr>
         <tr>
             <td><label>IN<div class="sub-label">Intelligenz</div></label></td>
-            <td><input type="number" [formControl]="fcIN"></td>
-            <td><input type="text" disabled value="{{getAttributeMod(fcIN)}}"></td>
+            <td><input type="number" [formControl]="fcIntelligence"></td>
+            <td><input type="text" disabled value="{{char.attributes.intelligence.modString}}"></td>
         </tr>
         <tr>
             <td><label>WE<div class="sub-label">Weisheit</div></label></td>
-            <td><input type="number" [formControl]="fcWE"></td>
-            <td><input type="text" disabled value="{{getAttributeMod(fcWE)}}"></td>
+            <td><input type="number" [formControl]="fcWisdom"></td>
+            <td><input type="text" disabled value="{{char.attributes.wisdom.modString}}"></td>
         </tr>
         <tr>
             <td><label>CH<div class="sub-label">Charisma</div></label></td>
-            <td><input type="number" [formControl]="fcCH"></td>
-            <td><input type="text" disabled value="{{getAttributeMod(fcCH)}}"></td>
+            <td><input type="number" [formControl]="fcCharisma"></td>
+            <td><input type="text" disabled value="{{char.attributes.charisma.modString}}"></td>
         </tr>
         </tbody>
     </table>
