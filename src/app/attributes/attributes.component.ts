@@ -10,9 +10,9 @@ export class AttributesComponent {
     fcST: FormControl = new FormControl(22);
     fcGE: FormControl = new FormControl(14);
     fcKO: FormControl = new FormControl(14);
-    fcIN: FormControl = new FormControl(10);
+    fcIN: FormControl = new FormControl(8);
     fcWE: FormControl = new FormControl(8);
-    fcCH: FormControl = new FormControl(5);
+    fcCH: FormControl = new FormControl(6);
 
     private getAttributeModifier(attributeValue: number = 10): number {
         return Math.floor((+attributeValue - 10) / 2);

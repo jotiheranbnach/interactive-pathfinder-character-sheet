@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { AttributesComponent } from './attributes/attributes.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { SkillsComponent } from './skills/skills.component';
+import { SavingThrowsComponent } from './saving-throws/saving-throws.component';
+import { ArmorComponent } from './armor/armor.component';
 
 @NgModule({
   imports: [
@@ -16,7 +18,9 @@ import { SkillsComponent } from './skills/skills.component';
   declarations: [
     AppComponent,
     AttributesComponent,
-    SkillsComponent
+    SkillsComponent,
+    SavingThrowsComponent,
+    ArmorComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
