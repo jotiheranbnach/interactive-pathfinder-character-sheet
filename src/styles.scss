@@ -1,0 +1,58 @@
+@import "assets/styles/variables";
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 $table--row-height;
+
+    background-color: black;
+    color: white;
+    padding: .1rem;
+    text-transform: uppercase;
+
+    .sub-label {
+        font-size: $font-size--small;
+    }
+}
+
+
+table {
+    margin: 0 -$table--horizontal-spacing;
+    border-spacing: $table--horizontal-spacing 5px;
+
+    thead {
+        text-transform: uppercase;
+        font-size: $font-size--small;
+        font-weight: bold;
+
+        tr {
+            height: unset;
+
+            td {
+                text-align: center;
+                vertical-align: bottom;
+            }
+        }
+    }
+
+    tbody {
+        input {
+            display: block;
+            width: 100%;
+            height: $table--row-height;
+            box-sizing: border-box;
+        }
+
+        tr {
+            padding: 0;
+            margin: 0;
+            height: $table--row-height;
+
+            td {
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+}

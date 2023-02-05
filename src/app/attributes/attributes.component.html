@@ -1,0 +1,44 @@
+<div class="attributes">
+    <table>
+        <thead>
+        <tr>
+            <td>Attribut</td>
+            <td>Attributs-Wert</td>
+            <td>Attributs-Mod.</td>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td><label>ST<div class="sub-label">Stärke</div></label></td>
+            <td><input type="number" [formControl]=fcST></td>
+            <td><input type="text" disabled value="{{getAttributeMod(fcST)}}"></td>
+        </tr>
+        <tr>
+            <td><label>GE<div class="sub-label">GEschicklichkeit</div></label></td>
+            <td><input type="number" [formControl]="fcGE"></td>
+            <td><input type="text" disabled value="{{getAttributeMod(fcGE)}}"></td>
+        </tr>
+        <tr>
+            <td><label>KO<div class="sub-label">Konstitution</div></label></td>
+            <td><input type="number" [formControl]="fcKO"></td>
+            <td><input type="text" disabled value="{{getAttributeMod(fcKO)}}"></td>
+        </tr>
+        <tr>
+            <td><label>IN<div class="sub-label">Intelligenz</div></label></td>
+            <td><input type="number" [formControl]="fcIN"></td>
+            <td><input type="text" disabled value="{{getAttributeMod(fcIN)}}"></td>
+        </tr>
+        <tr>
+            <td><label>WE<div class="sub-label">Weisheit</div></label></td>
+            <td><input type="number" [formControl]="fcWE"></td>
+            <td><input type="text" disabled value="{{getAttributeMod(fcWE)}}"></td>
+        </tr>
+        <tr>
+            <td><label>CH<div class="sub-label">Charisma</div></label></td>
+            <td><input type="number" [formControl]="fcCH"></td>
+            <td><input type="text" disabled value="{{getAttributeMod(fcCH)}}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
