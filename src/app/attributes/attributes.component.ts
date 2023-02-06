@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {FormControl} from "@angular/forms";
-import {CharacterDataService} from "../services/character-data.service";
+import {CharacterDataService} from "../services/character-data/character-data.service";
 
 @Component({
     selector: 'app-attributes',
